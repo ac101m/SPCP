@@ -1,9 +1,12 @@
-# TRCP - Trivial Retargetable Compiler Project
+# SPCP - Simple Portable Compiler Project
 
 ## About
-Although many retargetable compilers already exist (LLVM, GCC), porting them to novel CPU architectures is a non-trivial undertaking. Real compilers have to support real software and they have to generate performant code for real CPUs. Because of this, they tend to be very complicated!
+Although portable compilers are nothing new (LLVM is a prime example), porting them to new instruction sets is a 
+non-trivial undertaking. Real compilers have to support real software and they have to generate performant code for real 
+CPUs. Because of this, they tend to be quite complicated!
 
-The goal of this project is to deliver and maintain a simple compiler which may be easily modified to emit machine code for arbitrary homebrew instruction sets.
+The goal of this project is to deliver and maintain a _simple_ compiler which may be easily modified to emit machine 
+code for arbitrary homebrew instruction sets.
 
 ## Deliverables
 - Specification for a simple c-like programming language (TRCL). Syntax TBD.
