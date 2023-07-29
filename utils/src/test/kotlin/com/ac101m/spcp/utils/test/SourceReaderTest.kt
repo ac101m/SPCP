@@ -12,9 +12,9 @@ class SourceReaderTest {
         val testString = "Hello\n\nWorld\n!"
         val reader = SourceReader(testString.byteInputStream())
 
-        while (reader.read() != -1) {
-            reader.read()
-        }
+        do {
+            val c = reader.read()
+        } while (c != -1)
 
         assertThat(reader.line).isEqualTo(Config.LINE_NUMBER_START + 3)
         assertThat(reader.column).isEqualTo(Config.COLUMN_NUMBER_START + 1)
