@@ -3,6 +3,8 @@ plugins {
     id 'application'
 }
 
+description = "Compiler command line interface and entry point"
+
 application {
-    mainClassName = 'MainKt'
+    mainClassName = 'com.ac101m.spcp.cli.MainKt'
 }
