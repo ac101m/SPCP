@@ -13,3 +13,4 @@ rootProject.name = 'trivial-retargetable-compiler-project'
 
 include 'utils'
 include 'cli'
+include 'language'
