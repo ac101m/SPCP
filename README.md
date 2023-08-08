@@ -9,14 +9,14 @@ The goal of this project is to deliver and maintain a _simple_ compiler which ma
 code for arbitrary homebrew instruction sets.
 
 ## Project progress
-🟢 = future work, 🔵 = In progress, 🔴 = done!
+- 🟢 Initial language definition, datatypes, syntax, includes etc
+- 🔵 Parsing and generation of an abstract syntax tree (AST)
+- 🔴 Textmate grammar for syntax highlighting
+- 🔴 Syntax checking, readable error messages and so such
+- 🔴 IR definition and generation from the AST
+- 🔴 Machine description framework, registers, calling conventions, instructions, stack, endiness etc etc
+- 🔴 Lowering framework, including software substitutions for missing operations on the target architecture
+- 🔴 Optimisation passes, both generic and back-end specific.
+- 🔴 Documentation and guides on defining a back end for your ISA!
 
- 🟢 - Initial language definition, datatypes, syntax, includes etc
- 🔵 - Parsing and generation of an abstract syntax tree (AST)
- 🔴 - Textmate grammar for syntax highlighting
- 🔴 - Syntax checking, readable error messages and so such
- 🔴 - IR definition and generation from the AST
- 🔴 - Machine description framework, registers, calling conventions, instructions, stack, endiness etc etc
- 🔴 - Lowering framework, including software substitutions for missing operations on the target architecture
- 🔴 - Optimisation passes, both generic and back-end specific.
- 🔴 - Documentation and guides on defining a back end for your ISA!
+🟢 = future work, 🔵 = In progress, 🔴 = Done
