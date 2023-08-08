@@ -8,18 +8,15 @@ CPUs. Because of this, they tend to be quite complicated!
 The goal of this project is to deliver and maintain a _simple_ compiler which may be easily modified to emit machine 
 code for arbitrary homebrew instruction sets.
 
-## Deliverables
-- Specification for a simple c-like programming language (TRCL). Syntax TBD.
-  - Member functions in structs.
-  - C-style pointer types.
-  - No header files!
-- A compiler with a parameterizable back-end which may be retargeted to generate machine code.
-  - Method to describe machine to the compiler:
-    - Register set.
-    - Calling conventions.
-    - Instruction set.
-  - Parameterizable lowering process.
-    - Architecture specific optimisations.
-- An assembly parser/emitter for viewing generated assembly code.
+## Project progress
+🟢 = future work, 🔵 = In progress, 🔴 = done!
 
-How hard can it possibly be?
+ 🟢 - Initial language definition, datatypes, syntax, includes etc
+ 🔵 - Parsing and generation of an abstract syntax tree (AST)
+ 🔴 - Textmate grammar for syntax highlighting
+ 🔴 - Syntax checking, readable error messages and so such
+ 🔴 - IR definition and generation from the AST
+ 🔴 - Machine description framework, registers, calling conventions, instructions, stack, endiness etc etc
+ 🔴 - Lowering framework, including software substitutions for missing operations on the target architecture
+ 🔴 - Optimisation passes, both generic and back-end specific.
+ 🔴 - Documentation and guides on defining a back end for your ISA!
